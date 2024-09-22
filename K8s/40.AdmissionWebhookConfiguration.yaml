@@ -1,0 +1,11 @@
+apiVersion: admissionregistration.k8s.io/v1
+kind: AdmissionWebhookConfiguration
+metadata:
+  name: my-admission-webhook
+webhooks:
+- name: mywebhook.example.com
+  rules:
+  - operations: ["CREATE", "UPDATE"]
+    apiGroups: [""]
+    apiVersions: ["v1"]
+    resources: ["pods"]

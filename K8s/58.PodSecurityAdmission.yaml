@@ -1,0 +1,8 @@
+apiVersion: policy/v1beta1
+kind: PodSecurityAdmission
+metadata:
+  name: my-pod-security
+spec:
+  defaultPolicy: restricted
+  exemptions:
+    namespaces: ["kube-system"]

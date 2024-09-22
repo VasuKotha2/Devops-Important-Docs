@@ -1,0 +1,6 @@
+apiVersion: mygroup.example.com/v1
+kind: MyResource
+metadata:
+  name: my-resource-instance
+spec:
+  foo: bar

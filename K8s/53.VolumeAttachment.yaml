@@ -1,0 +1,9 @@
+apiVersion: storage.k8s.io/v1
+kind: VolumeAttachment
+metadata:
+  name: my-volume-attachment
+spec:
+  attacher: my-driver
+  nodeName: my-node
+  source:
+    persistentVolumeName: my-pv
